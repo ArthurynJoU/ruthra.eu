@@ -1,40 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artur Paulouski</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header class="logo">
-  <a href="https://www.jetbrains.com/webstorm/">
-    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-         height="90">
-  </a>
-</header>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
-    </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
-    </div>
-  </section>
-</main>
-<footer class="technologies">
-  <img src="/technologies.svg" alt="List of supported technologies">
-</footer>
-<script type="module" src="/src/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artur Paulouski Java Developer</title>
+    <meta name="description" content="Backend Java Developer and CS master student" />
+  </head>
+
+  <body>
+  <a href="#about">Skip intro</a>
+
+  <header>
+    <a href="#top">ruthra.eu</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section>
+      <h1>Artur Paulouski</h1>
+      <p>Backend Java Developer</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a developer in Kosice, Slovakia.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>I have strong leadership skills.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Data Fortress</h3>
+        <p>A 3D tower defence game teaches cybersecurity basics.</p>
+        <ul>
+          <li>Unity</li>
+          <li>C#</li>
+        </ul>
+        <a href="https://github.com/ArthurynJoU/DataFortress">Source code</a>
+      </article>
+
+      <article>
+        <h3>Dama</h3>
+        <p>University project about the game Dama.</p>
+        <ul>
+          <li>Java</li>
+          <li>SQL</li>
+        </ul>
+        <a href="https://github.com/ArthurynJoU/Dama">Source code</a>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>+421950695620, artur.paul2005@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Artur Paulouski</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
