@@ -1,0 +1,48 @@
+:root {
+    --bg: #0f0d0c;
+    --text: #efe8dc;
+    --muted: #a89e90;
+    --accent: #e3c35a;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 100px;
+    margin: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+a {
+    color: var(--accent);
+}
+
+ul.header-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
