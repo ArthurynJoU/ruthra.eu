@@ -7,7 +7,7 @@
 
 h1 {
     color: var(--accent);
-    font-size: 100px;
+    font-size: clamp(30px, 10vw, 100px);
     margin: 20px;
 }
 
@@ -45,4 +45,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    ul.header-links {
+        flex-direction: column;
+    }
 }
