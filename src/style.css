@@ -6,6 +6,12 @@
     --surface: #1a1714;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 h1 {
     color: var(--accent);
     font-size: clamp(30px, 10vw, 100px);
@@ -61,7 +67,7 @@ header {
     padding: 20px;
     transition: background-color 0.5s, color 0.5s;
     h3 {
-        margin: 0;
+        margin: 5px 0;
     }
 }
 
@@ -93,8 +99,27 @@ header {
     background-color: rgb(204 174 59 / 0.12);
 }
 
+.key-points {
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.key-points li {
+    padding: 0;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+}
+
+.gallery{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.gallery-track img{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
 }
