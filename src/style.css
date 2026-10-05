@@ -113,13 +113,65 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+.gallery {
+    position: relative;
+}
 
-.gallery{
+.gallery button {
+    position : absolute;
+    transition: background-color 0.5s;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0 0 0 / 0.47);
+    border: 1px solid var(--accent);
+    border-radius: 9999px;
+    color: var(--accent);
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    padding: 0;
+    line-height: 1;
+}
+
+.image-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery button:hover {
+    background-color: rgb(0 0 0);
+}
+
+.gallery button:active {
+    background-color: var(--accent);
+}
+
+.gallery-prev {
+    left: 8px;
+}
+.gallery-next {
+    right: 8px;
+}
+
+.gallery-track{
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 }
 .gallery-track img{
     flex: 0 0 100%;
     scroll-snap-align: start;
+}
+
+@media (hover : hover) {
+    .gallery button {
+        opacity: 0;
+        transition: opacity 0.3s, background-color 0.5s;
+    }
+    .gallery:hover button,
+    .gallery:has(:focus-visible) button {
+        opacity: 1;
+    }
 }
