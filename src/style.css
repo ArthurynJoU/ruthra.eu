@@ -12,9 +12,32 @@ img {
     display: block;
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    background-color: rgb(0 0 0 / 0.48);
+    border: 1px solid var(--accent);
+    border-radius: 9999px;
+    color: var(--accent);
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    padding: 0;
+    line-height: 1;
+}
+
+.header-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+
+
 h1 {
     color: var(--accent);
-    font-size: clamp(30px, 10vw, 100px);
+    font-size: clamp(30px, 9vw, 100px);
     margin: 20px 0;
 }
 
@@ -41,24 +64,14 @@ a {
     color: var(--accent);
 }
 
-ul.header-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 16px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
-}
+
 
 .project-card {
     background-color: var(--surface);
@@ -141,6 +154,7 @@ header {
 
 .gallery button:hover {
     background-color: rgb(0 0 0);
+    cursor: pointer;
 }
 
 .gallery button:active {
@@ -164,6 +178,30 @@ header {
     flex: 0 0 100%;
     scroll-snap-align: start;
 }
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--surface);
+        border-radius: 12px;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .header-links.is-open {
+        display: flex;
+    }
+}
+
+
 
 @media (hover : hover) {
     .gallery button {

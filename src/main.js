@@ -12,3 +12,20 @@ document.querySelectorAll('.gallery').forEach((gallery) => {
     track.scrollBy({left: -step(), behavior: 'smooth'});
   });
 });
+
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('#site-menu');
+
+toggle.addEventListener('click', () => {
+  const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+  toggle.setAttribute('aria-expanded', String(!isOpen));
+
+  menu.classList.toggle('is-open');
+});
+
+menu.addEventListener('click', () => {
+  const isOpen = toggle.getAttribute('aria-expanded') === 'false';
+  toggle.setAttribute('aria-expanded', String(!isOpen));
+
+  menu.classList.toggle('is-open');
+});
