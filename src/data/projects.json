@@ -1,0 +1,127 @@
+[
+  {
+    "id": "data-fortress",
+    "section": "projects",
+    "title": "🦠 Data Fortress",
+    "description": "A 3D tower defense game that teaches cybersecurity <a href='https://arthurynjou.itch.io/data-fortress'>Data Fortress</a>: players protect a core server from cyber threats by deploying defensive network modules. My bachelor's thesis.",
+    "images": [
+      {
+        "src": "/images/DF.png",
+        "alt": ""
+      }
+    ],
+    "tags": ["IT", "Unity", "C#", "Blender", "Spring Boot", "AWS"],
+    "link": "https://github.com/ArthurynJoU/Data-Fortress",
+    "linkText": "Source code"
+  },
+  {
+    "id": "student2mass",
+    "section": "projects",
+    "title": "🏦 Student2Mass: Banking Shift",
+    "description": "A research project with Tatra Banka on how students move from student to standard banking. Conducted 20 interviews, segmented customers and proposed retention strategies.",
+    "images": [
+      {
+        "src": "/images/TB.jpg",
+        "alt": ""
+      }
+    ],
+    "tags": ["Finance", "CX", "Research", "Experience Design"],
+    "link": "https://www.linkedin.com/posts/daniela-chovancova-boostello_mladetalenty-genz-inovacie-activity-7308052510232010752-1cGv",
+    "linkText": "Project presentation"
+  },
+  {
+    "id": "online-camp",
+    "section": "projects",
+    "title": "🏕 Online Camp \"What is it like to be a Game Maker?\"",
+    "description": "Coordinated an online camp where about 100 Belarusian participants learned the basics of game design in Unity and C#. Run by the Y Community with support from the EU and the Goethe-Institut Vilnius.",
+    "images": [
+      {
+        "src": "/images/OC.png",
+        "alt": ""
+      }
+    ],
+    "tags": ["Education", "Project management", "Game Design & Development"]
+  },
+  {
+    "id": "red-riding-glitch",
+    "section": "achievements",
+    "title": "🏆 2nd place at the hackathon",
+    "description": "Our game \"Red Riding Glitch\" took 2nd place at <a href='https://kpi.fei.tuke.sk/sk/nasi-tretiaci-na-game-jam-2025'>Game Jam 2025</a> at TUKE, where I wrote C# gameplay scripts and animated models. We then improved it with mentoring from <a href='https://www.games-farm.com/'>Games Farm</a> and presented it at <a href='https://kpi.fei.tuke.sk/sk/zaverecna-prezentacia-timovych-projektov-2026'>Lives IT Projects 2026</a>.",
+    "images": [
+      {
+        "src": "/images/RRG.jpg",
+        "alt": "Our team at the KPI booth at Game Jam 2025, with the game running on laptops"
+      }
+    ],
+    "tags": ["Games", "C#", "Unity", "Hackathon", "Team project"]
+  },
+  {
+    "id": "google-prompting",
+    "section": "achievements",
+    "title": "🤖 Google AI Certificate",
+    "description": "A Google certificate on Coursera: writing effective prompts, how AI relates to machine learning, and using AI in everyday tasks.",
+    "images": [
+      {
+        "src": "/images/GoogleAI1.jpg",
+        "alt": "Google Prompting Essentials certificate issued to Artur Paulouski"
+      },
+      {
+        "src": "/images/GoogleAI2.jpg",
+        "alt": ""
+      }
+    ],
+    "tags": ["AI", "Machine Learning", "Google"]
+  },
+  {
+    "id": "dtu-devops",
+    "section": "achievements",
+    "title": "🇩🇰 DevOps course at DTU",
+    "description": "Intensive course \"One Pipeline to Deploy Them All\" organized by <a href='https://best.eu.org/index.jsp'>BEST</a> and hosted by the Technical University of Denmark. Built and presented a group DevOps project, working with professionals from Google, Novo Nordisk and Accenture.",
+    "images": [
+      {
+        "src": "/images/BEST.jpg",
+        "alt": "Lecture at DTU with a slide titled Definition of DevOps"
+      }
+    ],
+    "tags": ["CI/CD", "GitHub Actions", "Terraform", "Ansible", "Docker"]
+  },
+  {
+    "id": "tuke-bachelor",
+    "section": "education",
+    "title": "💻 Bachelor of Computer Science",
+    "description": "Technical University of Košice",
+    "images": [
+      { "src": "/images/TUKE.jpg", "alt": "" }
+    ],
+    "tags": [],
+    "link": "https://www.tuke.sk/",
+    "linkText": "tuke.sk"
+  },
+  {
+    "id": "jku-exchange",
+    "section": "education",
+    "title": "🇦🇹 Exchange semester in Austria",
+    "description": "Johannes Kepler Universität Linz",
+    "images": [
+      { "src": "/images/JKU.jpg", "alt": "[TODO: describe the JKU image]" }
+    ],
+    "tags": [],
+    "link": "https://www.jku.at/",
+    "linkText": "jku.at"
+  },
+  {
+    "id": "nexteria",
+    "section": "education",
+    "title": "🤝 Leadership & Management student",
+    "description": "Nexteria Leadership Academy in Košice",
+    "images": [
+      {
+        "src": "/images/Nexteria.jpg",
+        "alt": "[TODO: describe the Nexteria image]"
+      }
+    ],
+    "tags": [],
+    "link": "https://www.nexteria.sk/",
+    "linkText": "nexteria.sk"
+  }
+]
