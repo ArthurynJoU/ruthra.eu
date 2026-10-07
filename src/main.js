@@ -29,3 +29,17 @@ menu.addEventListener('click', () => {
 
   menu.classList.toggle('is-open');
 });
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const data = Object.fromEntries(new FormData(form));
+  console.log(data);
+});

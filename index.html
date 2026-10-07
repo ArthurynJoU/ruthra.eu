@@ -45,7 +45,7 @@
       <div class="projects">
         <article class="project-card">
           <img src="/images/DF.png" alt="" width="1200" height="800" loading="lazy" />
-          <h3>Data Fortress</h3>
+          <h3>🦠 Data Fortress</h3>
           <p>An educational serious game designed to interactively teach modern cybersecurity concepts. Built as a 3D Tower Defense game, it challenges players to protect a core server from various types of cyber threats by strategically deploying defensive network modules.</p>
           <ul class="tags">
             <li>IT</li>
@@ -60,7 +60,7 @@
 
         <article class="project-card">
           <img src="/images/TB.jpg" alt="" width="1200" height="800" loading="lazy" />
-          <h3>Student2Mass: Banking Shift</h3>
+          <h3>🏦 Student2Mass: Banking Shift</h3>
           <p>Collaborated with Tatra Banka on a data-driven project analyzing student banking behavior. Conducted market research, customer segmentation, and proposed retention strategies to improve transition from student to mass banking services. 20 personal interviews were conducted.</p>
           <ul class="tags">
             <li>Finance</li>
@@ -73,7 +73,7 @@
 
         <article class="project-card">
           <img src="/images/OC.png" alt="" width="1200" height="800" loading="lazy" />
-          <h3>Online Camp "What is it like to be a Game Maker?"</h3>
+          <h3>🏕 Online Camp "What is it like to be a Game Maker?"</h3>
           <p>Coordinated a training session focused on basic game design skills, with participants gaining knowledge of Unity and C# development. Camp was created by the Y Community (30 members) with financial support from the EU and the Goethe Institute in Vilnius to support Belarusian participants (about 100).
           <ul class="tags">
             <li>Education</li>
@@ -160,10 +160,24 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <ul class="tags">
-        <li>+421950695620</li>
-        <li>artur.paul2005@gmail.com</li>
-      </ul>
+      <form class="contact-form" id="contact-form" method="post" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required/>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required/>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 

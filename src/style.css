@@ -213,3 +213,66 @@ header {
         opacity: 1;
     }
 }
+
+input,
+textarea,
+button{
+    font: inherit;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button {
+        align-self: flex-start;
+        padding: 4px 8px;
+        background-color: var(--accent);
+        color: var(--bg);
+        border-color: var(--bg);
+        border-width: 1px;
+        border-radius: 8px;
+        transition: background-color 0.5s;
+    }
+    button:hover {
+        background-color: rgb(255 212 0);
+        cursor: pointer;
+    }
+    button:active {
+        background-color: var(--text);
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    textarea,
+    input {
+        max-width: 600px;
+        background-color: var(--surface);
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        color: var(--text);
+        padding: 10px 14px;
+    }
+    textarea {
+        resize: vertical;
+    }
+
+    textarea:focus-visible,
+    input:focus-visible{
+        outline: 2px solid var(--accent);
+        outline-offset: 0;
+    }
+
+    input:user-invalid:focus-visible,
+    textarea:user-invalid:focus-visible {
+        outline-color: #e5675a;
+    }
+
+    input:user-invalid,
+    textarea:user-invalid {
+        border-color: #e5675a;
+    }
+}
