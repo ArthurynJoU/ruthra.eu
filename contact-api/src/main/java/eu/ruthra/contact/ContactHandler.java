@@ -1,4 +1,4 @@
-﻿package eu.ruthra.contact;
+package eu.ruthra.contact;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
