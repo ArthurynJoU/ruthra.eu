@@ -91,9 +91,11 @@ menu.addEventListener('click', () => {
   menu.classList.toggle('is-open');
 });
 
+const API_URL = 'https://93i0lp2gai.execute-api.eu-central-1.amazonaws.com/contact';
 const form = document.querySelector('form');
+const status = document.querySelector('#form-status');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   if (!form.checkValidity()) {
@@ -101,6 +103,29 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
+  const button = form.querySelector('button[type="submit"]');
   const data = Object.fromEntries(new FormData(form));
-  console.log(data);
+
+  button.disabled = true;
+  status.textContent = 'Sending...';
+
+  try {
+    const response = await fetch(API_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data),
+    });
+    const result = await response.json();
+
+    if (response.ok) {
+      status.textContent = 'Thank you! Your message has been sent.';
+      form.reset();
+    } else {
+      status.textContent = result.message || 'Something went wrong. Please try again.';
+    }
+  } catch {
+    status.textContent = 'Network error. Please try again or email me directly.';
+  } finally {
+    button.disabled = false;
+  }
 });
