@@ -91,6 +91,18 @@ menu.addEventListener('click', () => {
   menu.classList.toggle('is-open');
 });
 
+const toast = document.querySelector('#toast');
+let toastTimer;
+
+function showToast(message, type) {
+  clearTimeout(toastTimer);
+  toast.textContent = message;
+  toast.className = `toast toast--${type}`;
+  void toast.offsetWidth;
+  toast.classList.add('is-visible');
+  toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 4000);
+}
+
 const API_URL = 'https://93i0lp2gai.execute-api.eu-central-1.amazonaws.com/contact';
 const form = document.querySelector('form');
 const status = document.querySelector('#form-status');
@@ -107,7 +119,7 @@ form.addEventListener('submit', async (event) => {
   const data = Object.fromEntries(new FormData(form));
 
   button.disabled = true;
-  status.textContent = 'Sending...';
+  button.textContent = 'Sending...';
 
   try {
     const response = await fetch(API_URL, {
@@ -118,14 +130,15 @@ form.addEventListener('submit', async (event) => {
     const result = await response.json();
 
     if (response.ok) {
-      status.textContent = 'Thank you! Your message has been sent.';
+      showToast('Thank you! Your message has been sent.', 'success');
       form.reset();
     } else {
-      status.textContent = result.message || 'Something went wrong. Please try again.';
+      showToast(result.message || 'Something went wrong. Please try again.', 'error');
     }
   } catch {
-    status.textContent = 'Network error. Please try again or email me directly.';
+    showToast('Network error. Please try again or email me directly.', 'error');
   } finally {
     button.disabled = false;
+    button.textContent = 'Send';
   }
 });

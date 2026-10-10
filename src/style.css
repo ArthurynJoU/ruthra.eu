@@ -273,3 +273,56 @@ button{
         border-color: #e5675a;
     }
 }
+
+.toast {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, 200%);
+    max-width: min(90vw, 420px);
+    padding: 14px 20px 18px;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid rgba(239, 232, 220, 0.12);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.4);
+    overflow: hidden;
+    z-index: 100;
+    transition: 0.4s ease;
+}
+
+.toast.is-visible{
+    transform: translate(-50%, 0);
+}
+
+.toast::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: currentColor;
+}
+
+.toast.is-visible::after {
+    animation: toast-timer 4s linear forwards;
+}
+
+h2::after {
+    content: " ←";
+}
+
+@keyframes toast-timer {
+    from { width: 100%;}
+    to { width: 0%;}
+}
+
+.toast--success {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.toast-error {
+    border-color: #e5675a;
+    color: #e5675a;
+}
