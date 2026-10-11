@@ -308,10 +308,6 @@ button{
     animation: toast-timer 4s linear forwards;
 }
 
-h2::after {
-    content: " ←";
-}
-
 @keyframes toast-timer {
     from { width: 100%;}
     to { width: 0%;}
