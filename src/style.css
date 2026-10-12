@@ -322,3 +322,27 @@ button{
     border-color: #e5675a;
     color: #e5675a;
 }
+
+.CV {
+    margin-top: 20px;
+    a {
+
+    }
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.contact-links img {
+    display: block;
+    transition: transform 0.2s;
+}
+
+.contact-links a:hover img {
+    transform: scale(1.15);
+}
