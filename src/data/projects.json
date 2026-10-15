@@ -2,7 +2,7 @@
   {
     "id": "data-fortress",
     "section": "projects",
-    "title": "🦠 Data Fortress",
+    "title": "Data Fortress",
     "description": "A 3D tower defense game that teaches cybersecurity <a href='https://arthurynjou.itch.io/data-fortress'>Data Fortress</a>: players protect a core server from cyber threats by deploying defensive network modules. My bachelor's thesis.",
     "images": [
       {
@@ -17,7 +17,7 @@
   {
     "id": "student2mass",
     "section": "projects",
-    "title": "🏦 Student2Mass: Banking Shift",
+    "title": "Student2Mass: Banking Shift",
     "description": "A research project with Tatra Banka on how students move from student to standard banking. Conducted 20 interviews, segmented customers and proposed retention strategies.",
     "images": [
       {
@@ -32,7 +32,7 @@
   {
     "id": "online-camp",
     "section": "projects",
-    "title": "🏕 Online Camp \"What is it like to be a Game Maker?\"",
+    "title": "Online Camp \"What is it like to be a Game Maker?\"",
     "description": "Coordinated an online camp where about 100 Belarusian participants learned the basics of game design in Unity and C#. Run by the Y Community with support from the EU and the Goethe-Institut Vilnius.",
     "images": [
       {
@@ -45,7 +45,7 @@
   {
     "id": "red-riding-glitch",
     "section": "achievements",
-    "title": "🏆 2nd place at the hackathon",
+    "title": "2nd place at the hackathon",
     "description": "Our game \"Red Riding Glitch\" took 2nd place at <a href='https://kpi.fei.tuke.sk/sk/nasi-tretiaci-na-game-jam-2025'>Game Jam 2025</a> at TUKE, where I wrote C# gameplay scripts and animated models. We then improved it with mentoring from <a href='https://www.games-farm.com/'>Games Farm</a> and presented it at <a href='https://kpi.fei.tuke.sk/sk/zaverecna-prezentacia-timovych-projektov-2026'>Lives IT Projects 2026</a>.",
     "images": [
       {
@@ -58,7 +58,7 @@
   {
     "id": "google-prompting",
     "section": "achievements",
-    "title": "🤖 Google AI Certificate",
+    "title": "Google AI Certificate",
     "description": "A Google certificate on Coursera: writing effective prompts, how AI relates to machine learning, and using AI in everyday tasks.",
     "images": [
       {
@@ -75,7 +75,7 @@
   {
     "id": "dtu-devops",
     "section": "achievements",
-    "title": "🇩🇰 DevOps course at DTU",
+    "title": "DevOps course at DTU",
     "description": "Intensive course \"One Pipeline to Deploy Them All\" organized by <a href='https://best.eu.org/index.jsp'>BEST</a> and hosted by the Technical University of Denmark. Built and presented a group DevOps project, working with professionals from Google, Novo Nordisk and Accenture.",
     "images": [
       {
@@ -88,7 +88,7 @@
   {
     "id": "tuke-bachelor",
     "section": "education",
-    "title": "💻 Bachelor of Computer Science",
+    "title": "Bachelor of Computer Science",
     "description": "Technical University of Košice",
     "images": [
       { "src": "/images/TUKE.jpg", "alt": "" }
@@ -100,7 +100,7 @@
   {
     "id": "jku-exchange",
     "section": "education",
-    "title": "🇦🇹 Exchange semester in Austria",
+    "title": "Exchange semester in Austria",
     "description": "Johannes Kepler Universität Linz",
     "images": [
       { "src": "/images/JKU.jpg", "alt": "[TODO: describe the JKU image]" }
@@ -112,7 +112,7 @@
   {
     "id": "nexteria",
     "section": "education",
-    "title": "🤝 Leadership & Management student",
+    "title": "Leadership & Management student",
     "description": "Nexteria Leadership Academy in Košice",
     "images": [
       {
