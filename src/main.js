@@ -53,10 +53,21 @@ function renderSection(section) {
     .join('');
 }
 
-renderSection('projects');
-renderSection('achievements');
-renderSection('education');
-initGalleries();
+function initCardGlow() {
+  if (!window.matchMedia('(max-width: 600px) and (hover: none)').matches) return;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('is-active', entry.isIntersecting);
+      });
+    },
+    { rootMargin: '-40% 0px -40% 0px' },
+  );
+
+  document.querySelectorAll('.project-card').forEach((card) => {
+    observer.observe(card);
+  });
+}
 
 function initGalleries() {
   document.querySelectorAll('.gallery').forEach((gallery) => {
@@ -72,6 +83,12 @@ function initGalleries() {
     });
   });
 }
+
+renderSection('projects');
+renderSection('achievements');
+renderSection('education');
+initGalleries();
+initCardGlow();
 
 
 const toggle = document.querySelector('.menu-toggle');
